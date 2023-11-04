@@ -1,0 +1,16 @@
+#video-player {
+    max-width: 640px;
+    margin: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#video-controls {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add more styles as needed */
