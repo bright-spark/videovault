@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Player</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>My Video Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/7.0.0/css/framework7.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/7.0.0/js/framework7.min.js"></script>
 </head>
 <body>
-
-<div id="video-player">
-    <div id="player"></div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-<script src="script.js"></script>
+  <div class="statusbar"></div>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="center">My Video Player</div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="page-content">
+      <iframe id="myVideo" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"></iframe>
+    </div>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
 </body>
 </html>
