@@ -1,6 +1,6 @@
 {
   "name": "SmooTube",
-  "short_name": "Video Player",
+  "short_name": "SooTube",
   "description": "A simple PWA for playing YouTube videos.",
   "start_url": "/",
   "display": "standalone",
