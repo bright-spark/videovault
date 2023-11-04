@@ -1,0 +1,13 @@
+{
+  "name": "SmooTube",
+  "short_name": "Video Player",
+  "description": "A simple PWA for playing YouTube videos.",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192"
+    }
+  ]
+}
