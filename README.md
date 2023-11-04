@@ -1,3 +1,3 @@
-# SmooTube Video Vault
+# SmooTube
 
-A simple YouTube video player and PWA
+Tiny PWA for playing YouTube video playlists
