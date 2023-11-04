@@ -1,6 +1,8 @@
-#video-player {
-    max-width: 640px;
-    margin: auto;
+iframe#myVideo {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
-
-/* Add more styles as needed */
