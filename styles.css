@@ -6,3 +6,25 @@ iframe#myVideo {
   left: 0;
   object-fit: cover;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  iframe#myVideo {
+    border: 1px solid white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: black;
+    color: white;
+  }
+
+  iframe#myVideo {
+    border: 1px solid white;
+  }
+}
