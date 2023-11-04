@@ -1,2 +1,3 @@
-# videovault
-MP4 Video
+# SmooTube Video Vault
+
+A simple YouTube video player and PWA
