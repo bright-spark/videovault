@@ -10,21 +10,21 @@ iframe#myVideo {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
-    color: white;
+    color: black;
   }
 
   iframe#myVideo {
-    border: 1px solid white;
+    border: 1px solid black;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .navbar {
     background-color: black;
-    color: white;
+    color: black;
   }
 
   iframe#myVideo {
-    border: 1px solid white;
+    border: 1px solid black;
   }
 }
