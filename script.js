@@ -1,20 +1,38 @@
-$(document).ready(function() {
-    var video = $('#video')[0]; // Get the native DOM element
+var player;
 
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'M7lc1UVf-VE', // Replace with the ID of the YouTube video you want to play
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    // Bind events to your custom controls here, if necessary
+}
+
+function onPlayerStateChange(event) {
+    // Respond to player state changes (like video ending) here, if necessary
+}
+
+// Optional: Control the player with custom buttons
+$(document).ready(function() {
+    // Play/Pause toggle
     $('#play-pause').on('click', function() {
-        if (video.paused) {
-            video.play();
-            $(this).text('Pause');
-        } else {
-            video.pause();
+        var state = player.getPlayerState();
+        if (state === YT.PlayerState.PLAYING) {
+            player.pauseVideo();
             $(this).text('Play');
+        } else {
+            player.playVideo();
+            $(this).text('Pause');
         }
     });
 
-    // Add event listeners for other video events as needed
-});
-
-// Optional: Keep the video playing when the tab is out of focus
-$(window).on('blur', function() {
-    $('#video')[0].play();
+    // Other custom controls (volume, skip, etc.) can be added here
 });
